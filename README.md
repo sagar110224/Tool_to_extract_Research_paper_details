@@ -1,5 +1,5 @@
 # Tool_to_extract_Research_paper_details
-This langchain tool uses Selenium to search papers on Google Scholar for the given keywords. It then extracts given details (URL, Title, Authors, Year of publication) for the given number of papers.
+This langchain tool uses Selenium to search papers on Google Scholar for the given keywords. It then extracts given details (URL, Title, Authors, Year of publication, and DOI) for the given number of papers.
 
 This tool requires two inputs: search_str and number_of_papers
 search_str- short phrase that need to searched on google scholar
