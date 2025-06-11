@@ -12,7 +12,7 @@ from langchain_core.tools import StructuredTool
 from pydantic import BaseModel, Field
 
 #This class returns a list of papers with following details: URL, Title, Year of Publication, Authors name, and DOI. 
-class get_doi:
+class get_details:
     def __init__(self):
         driver_path='/Users/drago/Documents/chromedriver-mac-arm64_V137/chromedriver'
         # self.service = Service(ChromeDriverManager().install())
@@ -184,11 +184,11 @@ class get_doi:
 
 class details_tool_input(BaseModel):
     search_str:str=Field(required=True,description="Enter a concise and focused sentence containing all the key terms you want to search for on Google Scholar to find relevant research papers")
-    number_of_papers:int=Field(required=True,default=1,description="Enter the number of papers for which DOI need to extracted")
+    number_of_papers:int=Field(required=True,default=1,description="Enter the number of papers for which details need to extracted")
 
 def details_extraction_tool(search_str:str,number_of_papers:int)->json:
-    get_doi_=get_doi()
-    paper_details=get_doi_.main(search_str,number_of_papers)
+    get_details_=get_details()
+    paper_details=get_details_.main(search_str,number_of_papers)
     return paper_details
 
 #Extraction of paper details tool. Bind this tool directly with langchain
