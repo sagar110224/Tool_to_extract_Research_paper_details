@@ -6,11 +6,11 @@ search_str- short phrase that need to searched on google scholar
 number_of_papers- number of paper details required
 
 It returns a list of dictionary of length number_of_papers. Each dictionary has following details:
-1. URL: Website URL on which research paper is available 
-2. Title: Title of research paper
+1. url: Website URL on which research paper is available 
+2. title: Title of research paper
 3. year: Year of publication of research paper
-4. Authors name: Authors of research paper
-5. DOI: DOI of research paper
+4. author: Authors of research paper
+5. doi: DOI of research paper
 P.S.: 
 - those research papers are included in the dictionary for which all four details are present
 - Change the path of ChromeWebdriver at line number 17
