@@ -17,3 +17,7 @@ P.S.:
 - ChromeWebdriver can be downloaded from website: https://googlechromelabs.github.io/chrome-for-testing/#stable
 
 
+If you want to use proxies then use the file 'Langchain_RP_details_with_proxy.py'. 
+You can get free proxies from the website: www.webshare.io
+Copy the proxy list in a .txt file. 
+Copy this .txt file path at line 15 in proxy_extraction.py file
